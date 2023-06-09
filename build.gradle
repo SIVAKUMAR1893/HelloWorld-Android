@@ -3,9 +3,10 @@ buildscript {
         jcenter()
         google()
     }
+    println "Running gradle version: $gradle.gradleVersion"
     dependencies {
-        classpath 'com.android.tools.build:gradle:6.8'
-   
+        classpath 'com.android.tools.build:gradle:7.2.5'
+  
     }
      
 }
