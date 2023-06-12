@@ -8,8 +8,9 @@ buildscript {
     }
     println "Running gradle version: $gradle.gradleVersion"
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2'
-  
+        classpath 'com.android.tools.build:gradle:6.8'
+        classpath 'com.google.gms:google-services:3.0.0'
+   
     }
      
 }
@@ -18,5 +19,11 @@ allprojects {
     repositories {
         jcenter()
         google()
+         maven {
+            url 'https://jitpack.io'
+          }
     }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
