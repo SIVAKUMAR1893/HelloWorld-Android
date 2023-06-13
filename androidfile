@@ -10,7 +10,7 @@ pipeline {
             sh 'pwd'
             sh 'ls -lrth'
             sh "cd /var/lib/jenkins/workspace/Android-pipeline"
-            
+            sh '${JENKINS_HOME}'
                 sh 'gradle --version'
             }
         }
