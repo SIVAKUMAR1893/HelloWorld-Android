@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-       PATH=$PATH:$GRADLE_HOME/bin
+       PATH = "$PATH:$GRADLE_HOME/bin"
 
     }
     stages {
