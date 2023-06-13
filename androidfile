@@ -9,6 +9,7 @@ pipeline {
             steps {
             sh 'pwd'
             sh 'ls -lrth'
+            sh "cd /var/lib/jenkins/workspace/Android-pipeline"
             
                 sh 'gradle --version'
             }
