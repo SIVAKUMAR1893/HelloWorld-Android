@@ -4,7 +4,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:6.8'
+        classpath 'com.android.tools.build:gradle:4.4.1'
         classpath 'com.google.gms:google-services:3.0.0'
    
     }
@@ -25,5 +25,5 @@ task clean(type: Delete) {
 }
 
 task wrapper(type: Wrapper) {
-        gradleVersion = '4.1'
+        gradleVersion = '4.4.1'
     }
