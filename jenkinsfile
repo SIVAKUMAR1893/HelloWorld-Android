@@ -13,11 +13,12 @@ agent any
         // Compile the app and its dependencies
         //sh 'cd /home/ubuntu/Helloworld/HelloWorld-Android'   16-- //--distribution-type all
         sh 'pwd'
+        sh 'gradle clean'
         sh 'gradle --version'
-        sh 'gradle'
-        sh 'gradle wrapper --gradle-version 6.7.1'
-          sh './gradlew assembleRelease'
-        sh './gradlew compileDebugSources'
+        //sh 'gradle'
+        //sh 'gradle wrapper --gradle-version 6.7.1'
+         // sh './gradlew assembleRelease'
+       // sh './gradlew compileDebugSources'
     }
   }
     stage('Unit test') {
