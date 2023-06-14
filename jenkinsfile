@@ -11,7 +11,7 @@ agent any
     stage('Compile') {
       steps {
         // Compile the app and its dependencies
-        sh 'cd /home/ubuntu/Helloworld/HelloWorld-Android'
+        //sh 'cd /home/ubuntu/Helloworld/HelloWorld-Android'
         sh './gradlew compileDebugSources'
     }
   }
