@@ -11,8 +11,9 @@ agent any
     stage('Compile') {
       steps {
         // Compile the app and its dependencies
-        //sh 'cd /home/ubuntu/Helloworld/HelloWorld-Android'
-        //sh "gradle wrapper --gradle-version 6.7.1. --distribution-type all"
+        //sh 'cd /home/ubuntu/Helloworld/HelloWorld-Android'   16-- //--distribution-type all
+        sh 'pwd'
+        sh 'gradle wrapper --gradle-version 6.7.1' //--distribution-type all
           sh './gradlew assembleRelease'
         sh './gradlew compileDebugSources'
     }
