@@ -16,7 +16,7 @@ pipeline {
                     sh "pwd"
                     sh 'ls -al'
                     sh 'gradle'
-                    sh 'gradle wrapper --gradle-version 5.1.1'
+                    sh 'gradle wrapper --gradle-version 6.7.1'
                }
         }
     }
