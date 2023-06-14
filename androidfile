@@ -1,16 +1,13 @@
 pipeline {
     agent any
-    environment {
-       PATH="${GRADLE_HOME}/bin:${PATH}"
-
-    }
+   
     stages {
         stage('Gradle') {
             steps {
             sh 'pwd'
             sh 'ls -lrth'
-            sh "cd /var/lib/jenkins/workspace/Android-pipeline"
-            sh ' echo "${JENKINS_HOME}"'
+             sh 'gradle --version'
+          
               
             }
         }
@@ -19,8 +16,7 @@ pipeline {
                     sh "pwd"
                     sh 'ls -al'
                     sh 'gradle'
-               
-                    sh './gradlew clean'
+                    sh 'gradle wrapper --gradle-version 5.1.1'
                }
         }
     }
