@@ -13,6 +13,7 @@ agent any
         // Compile the app and its dependencies
         //sh 'cd /home/ubuntu/Helloworld/HelloWorld-Android'   16-- //--distribution-type all
         sh 'pwd'
+        sh 'gradle wrapper --gradle-version 7.0.2'
         sh 'gradle clean'
         sh 'gradle --version'
         //sh 'gradle'
