@@ -12,6 +12,7 @@ agent any
       steps {
         // Compile the app and its dependencies
         //sh 'cd /home/ubuntu/Helloworld/HelloWorld-Android'
+        sh "gradle wrapper"
         sh './gradlew compileDebugSources'
     }
   }
