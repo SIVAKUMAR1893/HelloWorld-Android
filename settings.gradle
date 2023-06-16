@@ -1,2 +1,2 @@
 include ':app'
-apply plugin 'com.android.settings'
+//apply plugin 'com.android.settings'
