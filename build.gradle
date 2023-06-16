@@ -14,9 +14,7 @@ allprojects {
     repositories {
         jcenter()
         google()
-        maven {
-            url 'https://jitpack.io'
-          }
+        mavenCentral()
     }
 }
 task clean(type: Delete) {
@@ -24,7 +22,7 @@ task clean(type: Delete) {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '6.7.1'
+    gradleVersion = '7.0.2'
     distributionUrl = distributionUrl.replace("bin", "all")
 }
 
