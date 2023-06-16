@@ -22,7 +22,7 @@ task clean(type: Delete) {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '7.0.2'
+    gradleVersion = '7.0.1'
     distributionUrl = distributionUrl.replace("bin", "all")
 }
 
